@@ -3,17 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-package lab1.solution;
+package lab1;
 
 /**
  *
- * @author Jim
+ * @author Dell
  */
-public class HRManager {
+public class HRManger {
     private Employee employee;
     
-    public void orientNewEmployee(String firstName, String lastName, String ssn) {
+    public void orientNewEmployee(String firstName, String lastName, String ssn){
         Employee e = new Employee();
         e.setFirstName(firstName);
         e.setLastName(lastName);
@@ -21,8 +20,10 @@ public class HRManager {
         e.doOrientation("A101");
         employee = e;
     }
-    
+
     public String getEmployeeStatus() {
         return employee.getStatus();
     }
+    
+    
 }
